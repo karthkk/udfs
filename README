@@ -1,13 +1,18 @@
 # udfs
 
-FIXME: write description
+User defined functions for hive.
+1. Day of Week from date string. Eg day_of_week("2011-05-06") will be friday
+2. Hour of day from timestamp. Eg hour_from_ts(12312312311231) 
 
 ## Usage
 
-FIXME: write
+create jar and copy the jar file + clojure file into hive. 
+Add jar to hive ext jars, 
+create functions in hive as: 
+create temporary function hour_from_ts as 'runa.udfs.HourOfDay';
+create temporary function day_of_week as 'runa.udfs.DayOfWeek'; 
+
 
 ## License
-
-Copyright (C) 2011 FIXME
 
 Distributed under the Eclipse Public License, the same as Clojure.
