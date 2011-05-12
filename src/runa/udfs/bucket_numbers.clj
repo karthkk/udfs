@@ -19,5 +19,5 @@
   "Buckets the content into one of the possible buckets."
   [this #^Text s #^Text bkt]
   (when s
-    (Text. (try (str " > " (get-bucket (str bkt) (str s)))
-		(catch Exception e# "")))))
+    (Text. (try (str " > " (get-bucket (.toString bkt) (.toString s)))
+		(catch Exception e (str (.getMessage e) (.toString s)))))))
