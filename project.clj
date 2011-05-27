@@ -1,4 +1,4 @@
-(defproject udfs "1.0.0-SNAPSHOT"
+(defproject udfs "1.0.0"
   :description "FIXME: write description"
   :dependencies [[org.clojure/clojure "1.2.1"]
 		 [hive/hive-common "0.5.0"]
