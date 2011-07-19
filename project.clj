@@ -9,4 +9,6 @@
 	runa.udfs.time-of-day
 	runa.udfs.first-event
 	runa.udfs.last-event
+	runa.udfs.product-info
+	runa.udfs.history-info
 	runa.udfs.bucket-numbers])
